@@ -1,0 +1,150 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+* {
+    margin: 0;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'zocial', sans-serif;
+    
+}
+[data-icon]:before {
+    font-family: 'zocial';
+    content: attr(data-icon);
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+}
+body {
+    font-family: 'Verdana', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition:  all .2s linear;
+    transition: all .2s linear;
+}
+.clear {
+    clear: both;
+}
+#main{
+    background-color: #FFFFFF;
+    padding: 200px 0 500px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+footer {
+    background-color: #C6d5c5;
+    position: relative;
+    z-index: 1;
+}
+
+footer > ul {
+    list-style: none outside none;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 25px 0;
+    position: relative;
+    width: 95%;
+}
+footer > ul li {
+    float: left;
+    padding: 20px 15px;
+    width: 25%;
+
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+footer > ul li:first-child {
+    padding-left: 0;
+}
+footer > ul li:nth-child(3) {
+    padding-right: 0;
+}
+footer > ul li .icon {
+    color: #999999;
+    float: left;
+    font-size: 16px;
+    line-height: 16px;
+}
+footer > ul li .text {
+    color: #171818;
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 105px;
+    position: relative;
+    text-align: justify;
+}
+.text h4 {
+    color: rgb(3, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.text a {
+    border-bottom: 1px dotted transparent;
+    color: #FFDD00;
+    font-weight: bold;
+}
+.text a:hover {
+    border-color: #FFDD00;
+}
+
+.links {
+    float: left;
+    list-style: none outside none;
+    position: relative;
+}
+.links li {
+    float: left;
+    margin-right: 10px;
+}
+.links a {
+    color: #778888;
+}
+.links a:hover {
+    color: #FFFFFF;
+}
+
+/* responsive rules */
+@media screen and (max-width: 1000px){
+    .links, .social, .copyright{
+        float:none;
+        text-align:center;
+    }
+    .social {
+        position:relative;
+        margin:10px 0;
+    }
+    .links li {
+        display:inline-block;
+        float:none;
+    }
+    .bar {
+        position:relative;
+    }
+    .bar-wrap {
+        margin-bottom:0;
+    }
+}
+
+@media screen and (max-width: 900px)  {
+    footer > ul li {
+        float:none;
+        width:auto;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .links li {
+        margin-right:5px;
+    }
+}
